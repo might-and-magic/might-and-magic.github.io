@@ -2,7 +2,7 @@ module.exports = {
   title: 'Might and Magic 6, 7, 8 & Merge',
   tagline: 'Might and Magic 6, 7, 8 & Merge',
   url: 'https://might-and-magic.github.io',
-  baseUrl: './',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'logo/favicon.ico',
@@ -46,15 +46,44 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'mm678-i18n/',
+          to: 'i18n/',
           label: 'I18N',
           position: 'left',
         },
         {
-          href: 'https://github.com/might-and-magic/might-and-magic.github.io',
           position: 'right',
+          label: 'View & Star GitHub Repo of ...',
           className: 'header-github-link',
-          'aria-label': 'GitHub repository',
+          items: [
+            {
+              href: 'https://github.com/might-and-magic/might-and-magic.github.io',
+              label: 'This website',
+            },
+            {
+              href: 'https://github.com/might-and-magic/mm678-i18n',
+              label: 'MM678 I18N',
+            },
+            {
+              href: 'https://github.com/might-and-magic/erathian-font',
+              label: 'Erathian Font',
+            },
+            {
+              href: 'https://github.com/might-and-magic/fnt-generator',
+              label: 'FNT font Generator',
+            },
+            {
+              href: 'https://github.com/might-and-magic/mmarch',
+              label: 'mmarch (CLI tool for LOD)',
+            },
+            {
+              href: 'https://github.com/might-and-magic/mmmerge-update-patch',
+              label: 'MMMerge Updater',
+            },
+            {
+              href: 'https://github.com/tomchen',
+              label: 'And follow @tomchen there!',
+            },
+          ],
         },
       ],
     },
@@ -117,7 +146,7 @@ module.exports = {
           id: 'all',
           path: 'all',
           routeBasePath: 'all',
-          sidebarPath: require.resolve('./sidebars/all.js'),
+          sidebarPath: require.resolve('./all/sidebar.js'),
           editUrl:
             'https://github.com/might-and-magic/might-and-magic.github.io/edit/master/',
           showLastUpdateAuthor: false,
@@ -148,8 +177,8 @@ module.exports = {
         path: 'i18n',
         editUrl:
           'https://github.com/might-and-magic/might-and-magic.github.io/edit/master/',
-        routeBasePath: 'mm678-i18n',
-        sidebarPath: require.resolve('./sidebars/mm678-i18n.js'),
+        routeBasePath: 'i18n',
+        sidebarPath: require.resolve('./i18n/sidebar.js'),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
       },
@@ -162,7 +191,7 @@ module.exports = {
         editUrl:
           'https://github.com/might-and-magic/might-and-magic.github.io/edit/master/',
         routeBasePath: 'mmmerge',
-        sidebarPath: require.resolve('./sidebars/mmmerge.js'),
+        sidebarPath: require.resolve('./mmmerge/sidebar.js'),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
       },
@@ -175,7 +204,7 @@ module.exports = {
         editUrl:
           'https://github.com/might-and-magic/might-and-magic.github.io/edit/master/',
         routeBasePath: 'mm6',
-        sidebarPath: require.resolve('./sidebars/mm6.js'),
+        sidebarPath: require.resolve('./mm6/sidebar.js'),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
       },
@@ -188,7 +217,7 @@ module.exports = {
         editUrl:
           'https://github.com/might-and-magic/might-and-magic.github.io/edit/master/',
         routeBasePath: 'mm7',
-        sidebarPath: require.resolve('./sidebars/mm7.js'),
+        sidebarPath: require.resolve('./mm7/sidebar.js'),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
       },
@@ -201,7 +230,7 @@ module.exports = {
         editUrl:
           'https://github.com/might-and-magic/might-and-magic.github.io/edit/master/',
         routeBasePath: 'mm8',
-        sidebarPath: require.resolve('./sidebars/mm8.js'),
+        sidebarPath: require.resolve('./mm8/sidebar.js'),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
       },

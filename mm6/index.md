@@ -5,4 +5,4 @@ sidebar_label: MM6
 slug: /
 ---
 
-aaa
+Comming soon ...
